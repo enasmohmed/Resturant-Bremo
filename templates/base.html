@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <title>{% block title%}{% endblock %} | Bremo</title>
+</head>
+<body>
+    <header>
+        {% block header%}{% endblock %}
+       <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+			<div class="logo">
+				<img src="/static/images/logo.png">
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+            <ul class="main-nav navbar-nav">
+            {% if current_user.is_authenticated %}
+                <li class="nav-item"><a href="{{url_for('admin')}}">Dashboard</a></li>
+                <li class="nav-item"><a href="{{ url_for('orders_admin')}}">Orders</a></li>
+                <li class="nav-item"><a href="{{url_for('logout')}}">logout</a></li>
+            {% else %}
+                <li class="nav-item"><a href="{{url_for('home')}}">Home</a></li>
+                <li class="nav-item"><a href="{{url_for('cart')}}"><img src="/static/images/card.png"></a></li>
+                <li class="nav-item"><a href="{{url_for('login')}}">login</a></li>
+            {% endif %}
+            </ul>
+            </div>
+        </nav>
+        <p>satisfy your cravings<br>
+experience a world of food with your favourite <br>restaurant at your fingertips!</p>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">©Bremo 2019.
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+</body>
+</html>

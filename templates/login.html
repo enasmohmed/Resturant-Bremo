@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block login %}{% endblock %}
+{% block content %}
+<div>
+    <div>
+        {% if error %}
+        <div class="alert alert-warning" role="alert">
+            Incorrect username or password
+        </div>
+        {% endif %}
+        <div class="start-form">
+        <form action="{{url_for('login')}}" method="POST">
+            <div class="name">
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="Enter your username">
+            </div>
+            <div class="pass">
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="log-button">
+            <button type="submit">Login</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

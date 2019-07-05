@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-style-2">
+
+    <div id="container">
+    <h3 class="form-style-2-heading">Order Your Meal</h3>
+    <form action="{{url_for('apply_order')}}"  method="POST"  class="bg-light">
+
+        <div class="form-group">
+        <label><span>Name <span class="required">*</span></span></label>
+        <input type="text" placeholder= "Name" name="name">
+        </div>
+
+        <div class="form-group">
+        <label><span>Address<span class="required">*</span></span></label>
+        <input type="text" placeholder="Address" name="address">
+        </div>
+
+        <div class="form-group">
+        <label><span>Phone<span class="required">*</span></span></label>
+        <input type="number" placeholder="Phone" name="phone">
+        </div>
+
+        <div class="form-group">
+        <label><span>Name meal <span class="required">*</span></span></label>
+        <input type="text" placeholder="Meal name" name="meal">
+        </div>
+
+        <input type="submit" value="Submit" />
+
+
+    </form>
+    </div>
+</div>
+{% endblock %}

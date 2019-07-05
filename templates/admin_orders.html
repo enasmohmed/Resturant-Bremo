@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="tap">
+    <table>
+        <caption>Orders Management</caption>
+       <thead>
+        <tr>
+            <td>Customer's Name</td>
+            <td>Address</td>
+            <td>Phone</td>
+            <td>meal</td>
+        </tr>
+        </thead>
+        <tbody>
+    {% for order in orders %}
+
+        <tr>
+            <td>{{ order.name }}</td>
+            <td>{{ order.address }}</td>
+            <td>{{ order.phone }}</td>
+            <td>{{ order.meal }}</td>
+        </tr>
+
+    {% endfor %}
+     </tbody>
+    </table>
+</div>
+{% endblock %}

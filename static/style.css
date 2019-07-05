@@ -1,0 +1,480 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    text-transform: capitalize;
+}
+
+body {
+	background-color: mistyrose;
+    font-family: 'Lobster', cursive;
+}
+header {
+	background-image: url(images/caver.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+header p{
+    margin-top: 450px;
+    font-size: 30px;
+    margin-left: 120px;
+    color: #34522ed9;
+    font-weight: normal;
+    display:flex;
+}
+
+
+
+h1 {
+	margin-right: 50%;
+	font-size: 60px;
+	margin-top: -290px;
+}
+
+.main-nav {
+	list-style: none;
+	float: right;
+	text-align: center;
+	padding: 10px;
+	margin-right: 50px;
+	width: 33%;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+.main-nav li a {
+	color: black;
+    font-size: 30px;
+	text-decoration: none;
+	margin-right: 5px;
+	padding: 20px;
+	margin-top: 10px;
+
+}
+
+
+.main-nav li a img {
+	list-style: none;
+	margin-bottom: -9px;
+	width: 35px;
+	height: 35px;
+
+}
+
+.main-nav li a:hover {
+	background-color: maroon;
+	color: white;
+	transition: all 1s ease-in;
+	padding: 2px 0 2px;
+}
+
+.logo img {
+	height: 120px;
+	width: 150px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+
+.small-meal-card{
+	width: 330px;
+    height: 360px;
+	margin-left: 60px;
+	background-color: gainsboro;
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50px;
+	padding: 40px;
+	border: 2px solid #fff;
+	margin-top: 20px;
+	transition: box-shadow ease-in-out 0.3s, opacity 0.4s;
+	 font-family: 'Courgette', cursive;
+
+}
+
+.small-meal-card:hover {
+	background-color: blanchedalmond;
+}
+
+.small-meal-img{
+	width: 250px;
+	padding: 8px;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.small-meal-img img {
+	width: 260px;
+    height: 250px;
+	margin-left: -40px;
+	margin-top: -30px;
+	border-radius: 20px;
+}
+
+.card-title {
+	width: 340px;
+	padding: 5px 30px 0 50px;
+}
+a{
+    text-decoration:none;
+    margin-bottom: -10px;
+	color: black;
+	text-decoration:none;
+	font-size: 30px;
+	margin-left: -35px;
+    text-align: center;
+}
+
+.meal-card:hover {
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+form-style-2 {
+	padding: 59px;
+    background-color: #cddaf3;
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light{
+    border: 1px solid;
+    width: 400px;
+    background: #d2a5a5;
+    height: 260px;
+    padding: 15px;
+    border-radius:10px;
+}
+
+.form-style-2-heading {
+	width: 80%;
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 3px;
+	margin-bottom: 30px;
+	font-size: 34px;
+	color: black;
+	text-align: center;
+	margin-left: 120px;
+}
+
+.form-style-2 label {
+	display: block;
+}
+
+.form-style-2 label > span {
+	width: 100px;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-right: 8px;
+	font-size: 16.6px;
+}
+
+.form-style-2 span.required {
+	color: red;
+}
+
+.form-style-2 input.input,
+.form-style-2 .select-field {
+	width: 78%;
+
+}
+
+.form-style-2 input.input,
+.form-style-2 .number,
+.form-style-2 .textarea,
+.form-style-2 .select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 2px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button] {
+	margin-top: 20px;
+    margin-left: 100px;
+	 background-color: #7d4b4b;
+	background-position: center;
+	border-radius: 25px;
+	font-size: inherit;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	outline: 0;
+	transition: background-color ease-in-out 0.3s;
+}
+
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover {
+	background-attachment: fixed;
+	background-color: #1b1515;
+    transition: all 1s ease-in;
+
+}
+
+.container form {
+	margin: 20px auto;
+	max-width: 800px;
+	padding: 20px 0 30px 100px;
+}
+
+
+#container{
+  width: 650px;
+  height: 750px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 50px;
+  background-image: url(../images/12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+}
+
+#container h1{
+  font-size: 30px;
+  margin: 5px auto 40px;
+  color: darksalmon;
+}
+
+#container h1:hover{
+  color: black;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+.meal-card{
+    margin: 0;
+    width: 500px;
+    height: 520px;
+    background-color: #dee5f;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+    margin-top: -30px;
+    margin-left: 15px
+}
+
+.meal-image {
+    width: 400px;
+    overflow: hidden;
+}
+
+.meal-image img{
+    margin: 20px;
+    height: 220px;
+    display: inline-block;
+    float: left;
+    border: 10px solid #da6f4a;
+    margin-top: 90px;
+    margin-left: 70px;
+}
+
+.meal-info{
+    width: 440px;
+    padding: 10px 10px 0 0px;
+    margin-top: -20px;
+    margin-left: 25px;
+}
+
+
+h2{
+  color: black;
+  font-size: 29px;
+  margin-left: 0px;
+  margin-top: 30px;
+  padding-left: 30px;
+}
+p{
+  margin-top: 20px;
+  color: black;
+  font-size: 29px;
+  margin-right: 20px;
+}
+.meal-order{
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  padding: 6px;
+  margin-left: 10px;
+}
+.price{
+  font-weight: bold;
+  font-size: 30px;
+  left: 50;
+  margin: 6px;
+}
+#container button{
+  margin-top: -10px;
+  width: 190px;
+  height: 60px;
+  background-position: center;
+  border-radius: 25px;
+  font-size: 20px;;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s;
+  outline: none;
+  margin-left: 180px;
+  background-image: url(../static/images/back.jpg);
+
+}
+
+#container button a{
+   margin-bottom: -10px;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    margin-left: -1px;
+    text-align: center;
+}
+.order-button img{
+    width: 22px;
+}
+#container button:hover{
+  background-attachment: fixed;
+}
+
+.meal-card:hover{
+  background-color: snow;
+}
+
+.start-form{
+    border: 2px solid;
+    margin: 20px 400px;
+    border: 1px solid;
+    width: 400px;
+    height: 250px;
+}
+.name{
+    margin-left: 190px;
+    margin: 30px;
+    font-size: 25px;
+}
+
+.pass{
+    margin-left: 190px;
+    margin: 30px;
+    font-size: 25px;
+}
+
+.log-button button{
+    margin: auto;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+.title{
+  margin: auto;
+  margin-left: 400px;
+}
+
+.title p{
+    background: #8c5e5e;
+    color: white;
+    font-size: 39px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+.list p{
+    border: 1px solid #751919;
+    width: 300px;
+    margin-left: 400px;
+    text-align: center;
+}
+
+.link{
+    margin: auto;
+    margin-left: 450px;
+    margin-top: 50px;
+    border: 1px solid brown;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+}
+.link a{
+    margin: auto;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.link:hover{
+  background: brown;
+  transition: all 1.5s ease-in-out;
+
+}
+
+.tap{
+    margin-left: 350px;
+    margin-top: 50px;
+    height: 150px;
+}
+table td th {
+  border: 1px solid #676767;
+}
+
+table{
+  width: 500px;
+}
+
+thead td{
+  text-align: center;
+  color: white;
+  background:#333;
+  padding:5px;
+}
+
+tbody td{
+  text-align: center;
+  padding:5px;
+  background:#EFEFEF;
+}
+footer{
+    margin: 0 auto;
+    height: 35px;
+    text-align: center;
+    background:#bd8a8a;
+    line-height: 2px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 90px;
+
+}
+footer a{
+    margin-left:9px;
+    font-size: 16px;
+    text-align: center;
+}
+
+

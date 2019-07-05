@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- card -->
+    {% for meal in meals %}
+
+    <div class="small-meal-card">
+        <div class="small-meal-img">
+            <img src="{{ meal.photo_url }}">
+        </div>
+        <div class="small-meal-name">
+            <h5 class="card-title">
+                <a href="{{ url_for('show_meal',id=meal.id)}}">{{ meal.name}}</a>
+            </h5>
+        </div>
+    </div>
+
+
+
+<!-- card complete! -->
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="container">
+    <h1>Meal Information</h1>
+        <div class="meal-card">
+            <div class="meal-image">
+                 <img src="{{ meal.photo_url }}"/>
+            </div>
+        <div class="meal-info">
+            <h2>
+                {{meal.name}}
+            </h2>
+                <p>{{meal.details}}</p>
+                <div class="meal-order">
+                    <div class="price">{{meal.price}}</div>
+                    <button><a href="{{url_for('apply_order')}}">Add Order</a></button>
+                </div>
+        </div>
+      </div>
+</div>
+{% endblock %}

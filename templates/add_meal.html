@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-style-2">
+
+    <div class="container">
+    <h2 class="form-style-2-heading">Add New Meal</h2>
+    <form action="{{url_for('meal_add')}}" method="POST" class="bg-light">
+        <div class="form-group">
+            <label><span>meal name<span class="required">*</span></span></label>
+        <input type="text" placeholder="Name" name="name">
+        </div>
+
+           <div class="form-group">
+				<label><span>Description <span class="required">*</span></span></label>
+        <input type="text" placeholder="Details" name="details">
+        </div>
+
+        <div class="form-group">
+				<label><span>Photo<span class="required">*</span></span></label>
+            <input type="text" placeholder="Photo_url" name="photo_url">
+        </div>
+
+     <div class="form-group">
+            <label><span>Price<span class="required">*</span></span></label>
+            <input type="text" placeholder="Price" name="price">
+        </div>
+
+        <input type="submit" value="Add Meal" />
+    </form>
+    </div>
+</div>
+{% endblock %}
+
+
